@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número a multiplicar"
+        android:id="@+id/etq1"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="#"
+        android:inputType="number"
+        android:ems="5"
+        android:textSize="30dp"
+        android:id="@+id/numero"
+        android:layout_below="@id/etq1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular hasta:"
+        android:textSize="20dp"
+        android:id="@+id/etq2"
+        android:layout_below="@id/numero"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Hasta #"
+        android:inputType="number"
+        android:textSize="30dp"
+        android:id="@+id/hasta"
+        android:layout_below="@id/etq2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textSize="20dp"
+        android:id="@+id/btn"
+        android:layout_below="@id/hasta"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabla"
+        android:textSize="20dp"
+        android:id="@+id/tabla"
+        android:layout_below="@id/btn"/>
+
+
+</RelativeLayout>
